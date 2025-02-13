@@ -1,2 +1,2 @@
 # guide_to_technical_excellence
-resources to improve your technical skills
+resources to improve technical skills
