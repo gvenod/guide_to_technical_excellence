@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/* logic: 
+    - for each point find distance using a square + b square formula. no need to square root as we just need relatice distance not actual
+    - add distance to vector; sort by distance
+    - return first k elements
+    */
+
 class Solution {
     public:
         vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {

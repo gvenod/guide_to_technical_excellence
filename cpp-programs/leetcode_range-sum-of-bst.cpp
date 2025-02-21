@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/* logic
+    - traverse tree and visit each node
+    - check if node value is in range; if yes, add to sum
+    - return sum
+    */
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -69,3 +75,8 @@ int main() {
 
     return 0;
 }
+
+
+    /* optimized code may be [not implemented here] - its a binary search tree, 
+    so find first element and go only right node to find the range. 
+    and stop when max is reached.*/
