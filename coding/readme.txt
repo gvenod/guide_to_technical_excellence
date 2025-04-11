@@ -1,5 +1,5 @@
 -> BigO
--> implement algorithms and data structures from scratch
+-> implement algorithms and data structures from scratch [tree, graph, LL, map, set ]
 -> practice coding in notepad /real interview questions
 -> invest time
 -> do mock
@@ -12,6 +12,14 @@ Google:
 https://techdevguide.withgoogle.com/
 
 
-interviewer looking for communication skills, problem solving skills, energy, coding skills
-in interview : be collaborative; ask questions, try to solve; ask help; start with silly questions if clueless.
+System design:
+https://github.com/ashishps1/awesome-system-design-resources
+
+common coding solutions: 
+https://algomap.io/
+
+
+interviewer looking for communication, problem solving skills, energy, coding skills
+in interview : be collaborative; ask questions, try to solve start with silly if clueless.
+
 

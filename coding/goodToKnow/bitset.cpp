@@ -78,6 +78,29 @@ class Solution {
 			return;
 		}
 		
+		std::string hexToBinary(const std::string& hexString) {
+			std::string binaryString = "";
+			for (char hexChar : hexString) {
+				int decimalValue;
+				if (hexChar >= '0' && hexChar <= '9') {
+					decimalValue = hexChar - '0';
+				} else if (hexChar >= 'A' && hexChar <= 'F') {
+					decimalValue = hexChar - 'A' + 10;
+				} else if (hexChar >= 'a' && hexChar <= 'f') {
+					 decimalValue = hexChar - 'a' + 10;
+				} else {
+					return "";
+				}
+				
+				std::string binaryFragment = "";
+				for (int i = 3; i >= 0; --i) {
+					binaryFragment += ((decimalValue >> i) & 1) ? '1' : '0';
+				}
+				binaryString += binaryFragment;
+			}
+			return binaryString;
+		}
+		
 		void hexToBinary(string hexArray) {
 			map<char, string> hexlookup = {{'0', "0000"}, {'A', "1011"}, {'F', "1111"}};
 			hexArray.toupper();
@@ -95,7 +118,7 @@ class Solution {
 		int hexToDecimal(string hexArray) {
 			long long decimalVal= 0;
 			for (int i =0; i < len(hexArray); i++) {
-				decimal += (hexArray[i] - )
+				decimal += (hexArray[i] - 'A' + 10)
 			}
 			return 0;
 		}

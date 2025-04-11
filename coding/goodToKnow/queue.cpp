@@ -1,5 +1,4 @@
 /*
-
 In queue, elements are inserted into one end of the container and deleted from the other. deque allow both insertion and deletion to both ends. It also allows random access.
 
 In C++, deque container provides fast insertion and deletion at both ends. Stands for Double Ended QUEue, it is a special type of queue where insertion and deletion operations are possible at both the ends in constant time complexity.
@@ -9,7 +8,7 @@ Just like arrays and vectors, deque elements can also be randomly accessed by th
 */
 
 #include <iostream>
-#include <deque>
+#include <deque> //double ended queue - push/pop form front and back.
 #include <queue>
 using namespace std;
 
@@ -50,6 +49,8 @@ void playWithDeque() {
 	// Inserting elements at back and front
     dq.push_back(6);
     dq.push_front(0);
+	
+	std::cout << "Element at index 1: " << dq[1] << std::endl;//random access
     
     for (auto x: dq)
         cout << x << " ";
@@ -63,15 +64,16 @@ void playWithDeque() {
 	// Updating element - changes the element at index 2 to 8
     dq[2] = 8;
 	
-	    // Traversing using the for loop
+	// Traversing using the for loop
     for (int i = 0; i < dq.size(); i++) 
         cout << dq[i] << " ";
 	
 	
-	 // Deleting from the back and front
+	// Deleting from the back and front
     dq.pop_back();
     dq.pop_front();
-    dq.erase(dq.begin());
+    
+	dq.erase(dq.begin());
 }
 
 int main() {

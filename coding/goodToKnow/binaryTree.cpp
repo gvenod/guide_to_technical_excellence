@@ -1,3 +1,21 @@
+/*
+Tree:
+  - insert node [front, middle, end, when empty, as root] 
+  - delete node
+  - traversal
+  - find/search
+  - height/depth [recursive, non recursive], max depth
+  - no of levels, 
+  - breadth of the tree/ diameter of tree, max breadth
+  - is balanced
+  - LCA - lowest common ancestor
+  - boundry of the tree [add root, left sub tree boundry, leaf nodes, right sub tree boundry [in reverse order]]
+  - invert tree - left to right and right to left
+  - compare 2 trees
+  - path sum equals target.
+  - symmetric tree - 2 node references going left and right from root and they are equal[mirror].
+*/
+
 #include <iostream>
 #include <algorithm>	//math
 #include <cmath>		//abs

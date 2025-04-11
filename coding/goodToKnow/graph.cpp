@@ -5,12 +5,11 @@ Degree of a Vertex − The degree of a vertex V of a graph G (denoted by deg (V)
 
 Even and Odd Vertex − If the degree of a vertex is even, the vertex is called an even vertex and if the degree of a vertex is odd, the vertex is called an odd vertex.
 
-Degree of a Graph − The degree of a graph is the largest vertex degree of that graph. For the above graph the degree of the graph is 3.
+Degree of a Graph − The degree of a graph is the largest vertex degree of that graph.
 
-The Handshaking Lemma − In a graph, the sum of all the degrees of all the vertices is equal to twice the number of edges. For example, in above case, sum of all the degrees of all vertices is 8 and total edges are 4.
+The Handshaking Lemma − In a graph, the sum of all the degrees of all the vertices is equal to twice the number of edges.
 
 A bipartite graph is a graph in which if the graph coloring is possible using two colors i.e; vertices in a set are colored with the same color.
-
 
 given as edges  - convert to adjacent list..
 given as matrix
@@ -92,8 +91,38 @@ int treeDiameter(int n, const vector<vector<int>>& edges) {
     return diameter;
 }
 
+// Function to get vertices from a list of edges
+set<int> getVerticesFromEdges(const vector<pair<int, int>>& edges) {
+    set<int> vertices; // Use a set to store unique vertices
+
+    // Iterate through the edges
+    for (const auto& edge : edges) {
+        // Extract the vertices from the edge
+        int vertex1 = edge.first;
+        int vertex2 = edge.second;
+
+        // Add the vertices to the set
+        vertices.insert(vertex1);
+        vertices.insert(vertex2);
+    }
+
+    return vertices;
+}
+
+
 
 int main() {
+
+    vector<pair<int, int>> edges = {
+        {0, 1},
+        {1, 2},
+        {2, 0},
+        {3, 4}
+    };
+
+    // Get the vertices
+    set<int> vertices = getVerticesFromEdges(edges);
+
     int num_vertices = 6;
     vector<vector<int>> adj_list(num_vertices);
     adj_list[0] = {1, 2};
