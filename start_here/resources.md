@@ -1,8 +1,11 @@
+
+-> 
 -> BigO
 -> implement algorithms and data structures from scratch [tree, graph, LL, map, set ]
 -> practice coding in notepad /real interview questions
--> invest time
--> do mock
+-> practice in excalidraw, google docs for design interview
+-> invest time daily - atleast 1 hour.
+-> do mocks with friends and family; get all help
 -> focus on process and journey to solve the coding problem.
 
 Meta:
